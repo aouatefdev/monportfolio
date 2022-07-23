@@ -1,0 +1,244 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+      
+    div.flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd; 
+        margin: 5px auto 10px auto;
+        background-color: #fff;
+    }
+    
+    .logoTitre {
+        display: flex;
+    }
+    .logoTitre img{
+       width: 110px;
+    }
+
+    h2.centre{
+        font-size:25px;
+    }
+    
+    h1 {
+        padding: 30px 20px;
+        font-size: 25px;
+        color: rgb(160, 40, 40);
+    }
+    
+    .list ul {
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+    }
+    
+    .list ul li {
+        padding: 35px 20px;
+    }
+    
+    .list ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        color: #000;
+    }
+    
+    .list ul li a:hover {
+        color: #F67A00;
+    }
+    /* Fin de header*/
+    
+    .contenu {
+        display: flex;
+        margin: 20px 20px;
+        justify-content: center;
+    }
+    
+    .section1 {
+        width: 540px;
+        margin-left: 10px;
+        padding-left: 0px;
+        margin-right: 50px;
+        padding-right: 0px;
+        text-align:justify;
+    }
+    
+    h2.centre {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    p.paragraphe1 {
+        margin-top: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    /* Fin première section */
+    
+    .section2 {
+        margin-left: 50px;
+        margin-right: 3px;
+    }
+
+    div.larg{
+        width:300px;
+    }
+
+    div.larg h3{
+        font-size:24px;
+        border-bottom:1px solid #ddd;
+        padding-bottom: 20px;
+    }
+      
+    ol.liste {
+        margin: 50px 0;
+        list-style-position: inside;
+    }
+    
+    h3.galerie {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+        margin: 30px 0;
+        padding-top: 70px;
+        font-size:25px;
+    }
+    
+    h3.galerie a{
+       margin-top: 100px;
+    }
+
+    /* Fin de main*/
+    
+    footer {
+        border-top: 1px solid #ddd;
+    }
+    
+    footer p {
+        text-align: center;
+        padding-top: 1%;
+    }
+
+   @media (min-width:752px) and (max-width:992px){
+    div.flex {
+        display: block;
+        padding-top: 0px;
+        border-bottom:none;
+    }
+
+    div.list ul{
+        width:100%;
+        padding-top: 7px;
+        padding-bottom:7px;
+        background-color: #ddd;
+    }
+
+    .logoTitre {
+        display: block;
+        text-align:center;
+    }
+    .logoTitre img{
+       width: 110px;
+       text-align:center;
+       padding-bottom:0px;
+    }
+    .list ul {
+        display: flex;
+        list-style: none;
+        margin-right: 30px;
+        padding-bottom:0px;
+        justify-content:space-around;
+    }
+    .list ul li {
+        padding-bottom:0;
+        padding-top:0;
+    }
+      
+  div.contenu{
+      display:block;     
+  }
+
+  section.section1{
+     margin-left: 19%; 
+  }
+
+  p.paragraphe2{
+      border-bottom:1px solid #ddd;
+      padding-bottom:30px;
+  }
+
+  section.section2{
+      display:flex;
+      justify-content: space-evenly;
+  }
+
+  div.larg{
+      width:230px;
+  }
+
+ h3, ol.liste,  h3.galerie {
+      margin-top:0;
+      padding-top:0;      
+  }
+
+}
+
+@media screen and (max-width:751px){
+    div.flex {
+        display: block;
+        border-bottom:none;
+    }
+
+div.list{
+    padding-top: 15px;
+    padding-bottom:15px;
+    background-color: #ddd;
+}
+
+    section.section1{
+     width:100%;
+     margin:0 auto;
+     margin-left:10%;
+    }
+
+    section.section1 img{
+    
+        width:100%;
+        margin: auto;
+    }
+
+    p.paragraphe1,p.paragraphe2{
+        width:100%;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .logoTitre {
+        display: block;
+        text-align:center;
+    }
+
+    .list ul {
+        display:block;
+        list-style: none;
+       text-align:center;
+        padding:0px;
+        margin:0;
+}
+    .list ul li{
+        display:block;
+        list-style: none;
+       text-align:center;
+        padding:0px;
+        margin:0;
+}
+
+div.larg{
+    display:none;
+}
+
+}

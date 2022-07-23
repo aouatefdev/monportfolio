@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gotu|Playfair+Display|Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playball&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style_index.css">  
+    <title>Accueil</title>
+</head>
+
+<body>
+  <header class="row">
+    <div>
+        <img src="asset/images/monlogo.png" alt="logo" class="logo-head">
+    </div>
+    <div>
+        <h1>
+            AOUATEF MECHEMECHE
+        </h1>
+        <p>Passionnée par Le Développement Web</p>
+    </div>
+    <div>
+        <nav>
+            <ul class="nav1">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Certificats<span>&#9660;</span></a>
+                    <ul class="sous-nav1">
+                        <li><a href="asset/php_et_sql.pdf" target="_blank">php-sql</a></li>
+                        <li><a href="asset/html_et_css.pdf" target="_blank">html-css</a></li>
+                        <li><a href="asset/formation-bureautique.JPG" target="_blank">bureautique</a></li>
+                        <li><a href="asset/test_PCIE.JPG" target="_blank">test-pcie</a></li>
+                        <li><a href="asset/comprendre-le-web.pdf" target="_blank">comprendre le web</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="citation">
+        <h2>Mon Slogan</h2>
+        <p class="diction">
+            &#8220;Dans la vie, je ne perds jamais, soit je gagne, soit j'apprends&#8222;.
+        </p>
+        <p class="auteur">
+            <q>Nelson Mandela</q>
+        </p>
+    </div>
+
+<menu class="row" onclick="cercleView">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" contentdata-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="asset/images/image1.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image2.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image3.jpg" class="d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image4.jpg" class=" d-block" alt="image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/images/image5.jpg" class="d-block" alt="image">
+                    </div>
+                </div>
+            </div>
+
+        <article>
+            <p><span>&#8220;</span> <em>À propos de moi...</em><br> Je suis autodidacte, curieuse et persévérante, passionnée par le développement web et par toutes nouveautés dans 
+                le domaine informatique, dotée des bonnes connaissances en développement web (html,css, js, php, sql, seo, 
+                jquery, wordpress...). <br>
+                j'ai réalisé ce portfolio dans mon temps libre en tant que débutante dans laprogrammation en 2019.<br>
+                Vous allez découvrir dans ce site quelques refontes des maquettes web, avec mespropres codes.<br>
+                Je souhaite vraiment m'engager dans un startup ou une entreprise de développement web pour transformer cette passion à un métier professionnel de demain ! <span>&#8222;<span>.</p>
+        </article>
+
+        <div class="marge">
+            <div class="cercle3D" id="divCercle" >
+                <div class="slider" id="slid">
+            <div class="item a" id="un" onclick="change()" onmouseover="change1()">Expériences</div>
+            <div class="item b" id="deux" onclick="change2()" onmouseover="change3()">Certificats</div>
+            <div class="item c" id="trois" onclick="change4()" onmouseover="change5()">Langues</div>
+            <div class="item d" id="quatre" onclick="change6()" onmouseover="change7()">Coordonnées</div>
+                </div>
+            <input type="button" value="Fermer" id="return" onclick="retour()">    
+            </div> 
+
+            <div class="articles">
+                <p id="articleC" onclick="artC()">
+                    <span>COORDONNÉES</span><br> Adresse: 39 rue Emile Zola,<br> 91100 Corbeil-essonnes<br>
+                    Téléphone: 07 51 53 56 31<br> Email: aouatef.mech@gmail.com <br>
+                </p>
+                <p id="articleL" onclick="artL()">
+                    <span>LANGUES</span><br> * Arabe Litteraire: Bilingue<br> * Français:
+                    Niveau C2<br> * Anglais: Niveau B2<br>
+                </p>
+                <p id="articleD" onclick="artD()">
+                    <span>CERTIFICATS</span><br> 1) Certificat des compétences informatiques:<br> Mars 2019|Mai 2019
+                    (Open-classrooms)<br> * Certificat HTML5 et CSS3<br> * Certificat PHP et SQL<br> 2) Certificat
+                    des compétences bureautiques:<br> 2017|septembre
+                    2017
+                    <br> (Centre de formation l'AFPA|Ris-orangis)<br> * Word<br> * Excel<br> * traitement de
+                    texte<br> 3)Licence fondamentale:<br> (Institut supérieur de théologie|Tunis)<br> =>reconnu par
+                    enic-naric en France
+                </p>
+                <p id="articleE" onclick="artE()">
+                    <span>EXPERIENCES</span><br> 1) Développeuse web:<br> juin 2019 | juin 2020<br>(
+                    Association Colombbus Paris 75010)<br> * langages informatiques: html, css, js , php, sql, bootstrap, wordpresse<br> * Réaliser des maquettes pour des sites 
+                    web (conception maquettes, intégration web...) <br> * Maîtriser le logiciel WordPress.<br> 2)Formation Stage: « Développeur d'Applications
+                    Multimédia»<br> Centre Doranco Espace Multimédia, 75020 Paris<br> * Maîtriser le frameWork Symfony5 PHP<br> * Travailler avec une Base de Donner MySql<br> * Construire une cahier de charge.<br>
+                    De décembre 2020 à juin 2021 3) Animatrice: <br>août 2017 |
+                    septembre 2017<br> (Association Habitat et humanisme Paris 75020)<br> * Accueillir les
+                    émigrants.<br> * Les accompagner pour des procédures
+                    administratives.
+                    <br> * Traduction orale Français | Arabe <br> 4)Surveillante de Cantines:<br> janvier 2018 |
+                    juin 2020 <br> (Mairie de Corbeil-essonnes)<br> * Accueillir les enfants à la sortie des
+                    classes.<br> * Assurer la sécurité des enfants.<br> * Pratiquer les premiers soins en cas
+                    d'accident.
+                </p>
+            </div>  
+        </div>  
+         
+        <div class="global" id="divGlobale">
+            <div id="rectangle2"></div>
+            <div id="rectangle">
+                    <div id="dossier">
+                        <div id="feuille1"><a href="asset/dossier_maquette1/maquette1.html" target="_blank">Site1</a>
+                        </div>
+                        <div id="feuille2"><a href="asset/dossier_maquette2/maquette2.html" target="_blank">Site2</a>
+                        </div>
+                        <div id="feuille3"><a href="asset/dossier_maquette3/maquette3.html" target="_blank">Site3</a>
+                        </div>
+                        <div id="feuille4"><a href="asset/dossier_maquette4/maquette4.html" target="_blank">Site4</a>
+                        </div>
+                    </div>
+            </div>
+            <div id="rectangle3" onclick="firstclick()">
+                    <div class="titreLivre">
+                        <p> Ouvrir & Refermer
+                        <span class="cliquez">Cliquez-ici</span>
+                        </p>
+                    </div>       
+            </div>    
+        </div>       
+</menu>
+
+<footer class="row">
+        <ul>
+            <li><img src="asset/images/logo.png" alt="logo"/></li>
+            <li><p>&copy; | 2020 - Tous droits réservés</p></li>
+            <li><i class="fab fa-twitter"></i><a href="https://twitter.com/AouatefM/" target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/aouatefmech/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="tel"><i class="fas fa-phone" aria-hidden="true"></i>+33 7 51 53 56 31</li>
+           
+        </ul>
+</footer>
+
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
