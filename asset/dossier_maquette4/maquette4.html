@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CALCULATRICE</title>
+</head>
+
+<body>
+    <table>
+        <caption>
+            CALCULATRICE
+        </caption>
+
+        <tr>
+            <th colspan="4"><input type="text" class="screen" id="ecrant" value=""></th>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="button" class="forme" id="clear" value="C"></td>
+            <td><input type="button" class=" number operator" value="/"></td>
+        </tr>
+
+        <tr>
+            <th><input type="button" class="number" value="1"></th>
+            <td><input type="button" class="number" value="2"></td>
+            <td><input type="button" class="number" value="3"></td>
+
+            <td><input type="button" class="number  operator" value="*"></td>
+        </tr>
+
+        <tr>
+            <th><input type="button" class="number" value="4"></th>
+            <td><input type="button" class="number" value="5"></td>
+            <td><input type="button" class="number" value="6"></td>
+            <td><input type="button" class="number  operator center" value="+"></td>
+        </tr>
+
+        <tr>
+            <th><input type="button" class="number" value="7"></th>
+            <td><input type="button" class="number" value="8"></td>
+            <td><input type="button" class="number" value="9"></td>
+            <td><input type="button" class="number  operator" value="-"></td>
+        </tr>
+
+        <tr>
+            <th><input type="button" class="number" value="0"></th>
+            <td colspan="2"><input type="button" class="forme" id="equal" value="="></td>
+            <td><input type="button" class="numberV" id="virgule" value=","></td>
+
+        </tr>
+    </table>
+
+    <script src="jsCalculatrice.js"></script>
+</body>
+
+</html>
